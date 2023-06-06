@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+    background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 160px;
+}
+
+.logo {
+    width: 158px;
+    height: 33px;
+}
+
+.title-content {
+    margin-top: 140px;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+.title {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.title2 {
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+p {
+    width: 65%;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+fieldset {
+    border: none;
+}
+
+.submit {
+    display: flex;
+    margin-top: 40px;
+}
+
+input {
+    padding: 15px;
+    width: 60%;
+    border-radius: 50px;
+    border: thin solid hsla(0, 36%, 70%, 0.6);
+    position: relative;
+}
+
+input::placeholder {
+    color: hsla(0, 36%, 70%, 0.6);
+}
+
+input:invalid {
+    border: solid hsl(0, 93%, 68%);
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 85%;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    width: 13%;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: relative;
+    right: 50px;
+    box-shadow: 0px 5px 5px 2px hsla(0, 74%, 74%, 0.2);
+}
+
+button:hover {
+    background-image: linear-gradient(135deg, hsla(0, 80%, 86%, 0.6), hsla(0, 74%, 74%, 0.6));
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 2px hsla(0, 80%, 86%, 0.4);
+    transform: scale(1.06);
+}
+
+.alert {
+    color: hsl(0, 93%, 68%);
+    font-size: 14px;
+    position: absolute;
+    bottom: 140px;
+    left: 180px;
+}
