@@ -11,6 +11,8 @@
 .content {
     display: flex;
     background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
@@ -22,6 +24,10 @@
 .logo {
     width: 158px;
     height: 33px;
+}
+
+.image-mobile {
+    display: none;
 }
 
 .title-content {
@@ -106,6 +112,64 @@ button:hover {
     color: hsl(0, 93%, 68%);
     font-size: 14px;
     position: absolute;
-    bottom: 140px;
+    bottom: 135px;
     left: 180px;
+}
+
+@media (max-width: 414px) {
+    .card{
+        width: 414px;
+        align-items: center;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .image-mobile {
+        display: flex;
+    }
+
+    .logo {
+        width: 120px;
+        height: 25px;
+        position: relative;
+        right: 100px;
+        bottom: 40px;
+    }
+
+    .title-content {
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+    }
+
+    p {
+        display: flex;
+        width: 335px;
+        text-align: center;
+    }
+
+    input {
+        width: 340px;
+        left: 25px;
+    }
+
+    button {
+        width: 65px;
+        right: 35px;
+    }
+
+    input:invalid {
+        background-position: 78%;
+    }
+
+    .alert {
+        top: 765px;
+        left: 60px;
+    }
 }
