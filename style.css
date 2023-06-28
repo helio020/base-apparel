@@ -65,11 +65,12 @@ fieldset {
 .submit {
     display: flex;
     margin-top: 40px;
+    position: relative;
 }
 
 input {
     padding: 15px;
-    width: 60%;
+    width: 380px;
     border-radius: 50px;
     border: thin solid hsla(0, 36%, 70%, 0.6);
     position: relative;
@@ -92,7 +93,7 @@ input:focus {
 
 button {
     padding: 10px;
-    width: 13%;
+    width: 65px;
     border-radius: 50px;
     border: none;
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -112,8 +113,8 @@ button:hover {
     color: hsl(0, 93%, 68%);
     font-size: 14px;
     position: absolute;
-    bottom: 135px;
-    left: 180px;
+    top: 60px;
+    left: 30px;
 }
 
 @media (max-width: 414px) {
@@ -169,7 +170,6 @@ button:hover {
     }
 
     .alert {
-        top: 765px;
-        left: 60px;
+        left: 50px;
     }
 }
